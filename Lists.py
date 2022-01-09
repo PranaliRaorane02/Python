@@ -1,4 +1,50 @@
 #Lists
+#Kindly run each program separately as they have repreated variables.
+
+#Addition Of Two Lists
+n5= int(input("Enter Number Of Elements In First List:"))
+n7= int(input("Enter Number Of Elements In Second List:"))
+lt1=[]
+lt2=[]
+lt3=[]
+sum=0
+for i in range(n5):
+    kt1=int(input("Enter The Element For List 1:"))
+    lt1.append(kt1)
+for q in range(n7):
+    kt2=int(input("Enter The Element For List 2:"))
+    lt2.append(kt2)
+print("The First List Is:", lt1)
+print("The Second List Is:", lt2)
+if(n5==n7):
+     for q in range(n5):
+         sum=lt1[q]+lt2[q]
+         lt3.append(sum)
+else:
+    print("The Number Of Elements Are Unequal, Hence Cannot Add")
+print("The Addition Of The Two Lists Is:", lt3)
+
+
+#Common List Elements
+nc1= int(input("Enter Number Of Elements In First List:"))
+nc2= int(input("Enter Number Of Elements In Second List:"))
+lc1=[]
+lc2=[]
+lc3=[]
+for y in range(1,nc1+1):
+    kc1=int(input("Enter The Element For List 1:"))
+    lc1.append(kc1)
+for y in range(1,nc2+1):
+    kc2=int(input("Enter The Element For List 2:"))
+    lc2.append(kc2)
+print("The First List Is:", lc1)
+print("The Second List Is:", lc2)
+for y in lc1:
+    for z in lc2:
+            if(y==z):
+                lc3.append(y)
+print("The Common Elements Are:", lc3)
+
 
 #Operations
 a=[10,20,30,40]
